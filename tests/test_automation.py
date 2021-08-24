@@ -1,5 +1,21 @@
 from automation import __version__
+from automation.automation import *
+import pytest
 
-
+#@pytest
 def test_version():
     assert __version__ == '0.1.0'
+
+#@pytest
+def test_phone_numbers():
+    actual = (phone_numbers("assets/potential-contacts.txt.txt"))
+    excepted = ['178-383-093', '001-048-736', '559966222', '693-728-332', '666083317', '437-807-850', '057-270-791', '001-430-040', '(896)573-101', '927-030-224', '345-940-647', '001-050-322', '967647307', '916-191-991', '031.153.258', '509-234-501', '001-415-879', '(228)907-676', '(659)184-404', '410.924.415', '(461)731-308', '751.899.050', '(370)935-329', '390.176.848', '808.164.548', '269-857-142', '069-491-339', '(132)563-482', '348-559-035', '001-008-445', '903-937-184', '(461)108-581', '355-752-341', '087.879.413', '429661954', '001-939-181', '(324)983-547', '326.697.214', '001-087-265', '127.650.453', '303.594.863', '309.863.937', '608.527.560', '675-699-362', '311.994.096', '176-099-625', '(946)797-657', '830-478-602', '443.538.652', '(489)319-688', '692-465-527', '(822)773-208', '(481)468-072', '964-915-810', '001-653-384', '001-453-398', '502.887.810', '001-112-074', '552.403.526', '314.173.133', '(395)258-502', '(085)890-481', '823-682-323', '(414)851-431', '912-659-683', '001-521-410', '(026)957-094', '358-754-050', '549-491-025', '001-862-407', '001-575-358', '604-845-878', '527810367', '001-809-031', '187-196-751', '(595)877-519', '385-390-729', '001-739-004', '(678)520-588', '912.930.608', '112.565.351', '408-119-501', '313.495.041', '001-322-077', '(629)334-631', '333-876-621', '027-008-114', '463-704-848', '100-910-139', '187-338-210', '708.179.622', '143099861', '954-481-448', '221.974.350', '001-864-565', '001-068-591', '(557)968-480', '(321)717-599', '711-685-393', '076410688']
+    assert actual == excepted 
+
+#@pytest
+def test_emails():
+    actual = (emails("assets/potential-contacts.txt.txt"))
+    excepted = ['danielletaylor@hotmail.com', 'deleonchristopher@christian-wilson', 'megan54@kramer-solis', 'hsoto@sharp-king', 'dflores@yahoo.com', 'aguilarjoseph@hinton-hardin', 'rebeccathomas@ortiz.net', 'john34@yahoo.com', 'nicholas74@yahoo.com', 'jgaines@bond.com', 'codymorrow@hotmail.com', 'rebeccaholder@hotmail.com', 'aaron84@gmail.com', 'leeshelley@lowery.com', 'melissa55@hotmail.com', 'robert00@weaver-jefferson', 'waltersmegan@franco.com', 'mullinsnicole@simpson.com', 'joneslindsay@figueroa.info', 'james19@yahoo.com', 'andrea10@yahoo.com', 'rmeyer@wallace.com', 'renee49@campbell.biz', 'ortizjessica@gmail.com', 'lnelson@obrien.com', 'patrickkimberly@smith-guzman', 'petersenbrandon@sweeney-oconnor', 'jeffrey13@gmail.com', 'herreraelaine@wilson.biz', 'shannon27@yahoo.com', 'davismichele@wright.info', 'pattersonbradley@hotmail.com', 'murphykelly@matthews.com', 'portermiguel@hotmail.com', 'bakerpreston@peters.com', 'garciagabrielle@hotmail.com', 'hutchinsonsarah@yahoo.com', 'ayerschristopher@gmail.com', 'williamclark@yahoo.com', 'kevinturner@hotmail.com', 'xharris@lowe.biz', 'lisajensen@gmail.com', 'samuelweber@gmail.com', 'lacey37@yahoo.com', 'michaelmoore@scott-wong', 'lawrence89@haney.com', 'ugraham@stanley.com', 'upeterson@moreno-roberts', 'nicholstracy@jimenez.info', 'earlharvey@gmail.com', 'smithrobert@yahoo.com', 'leeharold@williams.info', 'millerjoshua@yahoo.com', 'christopherward@gmail.com', 'amberpowell@brown-lewis', 'djimenez@hotmail.com', 'brooksbrian@yahoo.com', 'james18@lopez.com', 'kelliboone@yahoo.com', 'diane95@alexander.biz', 'castrodavid@gmail.com', 'james06@mann.com', 'melissa67@hotmail.com', 'ajohnson@frazier.com', 'erin28@gmail.com', 'moorestuart@gmail.com', 'vshah@gmail.com', 'wmiller@gmail.com', 'amanda61@yahoo.com', 'kenneth39@gmail.com', 'nhill@dominguez.com', 'george55@navarro-price', 'hoffmankarla@mcdonald.com', 'frodriguez@peters.info', 'craiggeorge@myers-lopez', 'frobbins@stevens.com', 'robin52@smith.biz', 'hendersonjeremy@payne.net', 'tcastro@curtis.com', 'bbond@hotmail.com', 'michaelbutler@gmail.com', 'msnyder@holland.com', 'gflores@hotmail.com', 'keithperry@white-flores', 'martingary@yahoo.com', 'williamsalex@yahoo.com', 'hcarter@hotmail.com', 'gnorton@gmail.com', 'isaiahthomas@wang.org', 'veronicabarker@yahoo.com', 'josephwolfe@hotmail.com', 'lpitts@hotmail.com', 'thompsonjoshua@gmail.com', 'felicia33@yahoo.com', 'dodsonjohn@doyle.com', 'sarah95@cobb-mcfarland', 'gloria07@gmail.com', 'cathylopez@nguyen-hutchinson', 'rebeccagreene@cooper.info', 'stantonlisa@yahoo.com']
+    assert actual == excepted
+
+
